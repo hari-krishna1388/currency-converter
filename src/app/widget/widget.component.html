@@ -1,0 +1,26 @@
+<div class="widget">
+  <h3>Currency convertor</h3>
+  <div>Type in amount and select currency:</div>
+  <form>
+    <div>
+      <input type="text" name="fromCurrValue" placeholder="0.00" [(ngModel)]="exchange.fromCurrValue" (ngModelChange)="fromValueHandler($event)" /> 
+      <select name="fromCurrType" [(ngModel)]="exchange.fromCurrType" (ngModelChange)="fromTypeHandler($event)">
+        <option>CAD</option>
+        <option>USD</option>
+        <option>EUR</option>
+      </select>
+    </div>  
+    <div>Converted amount:</div>
+    <div>
+        <input type="text" name="toCurrValue" placeholder="0.00" [(ngModel)]="exchange.toCurrValue" (ngModelChange)="toValueHandler($event)" /> 
+        <select name="toCurrType" [(ngModel)]="exchange.toCurrType" (ngModelChange)="toTypeHandler($event)">
+          <option>CAD</option>
+          <option>USD</option>
+          <option>EUR</option>
+        </select>
+    </div>
+  </form>
+  <div class="txtRight">
+    <a href="javascript:void(0)" (click)="disclaimer()">Disclaimer</a>
+  </div>  
+</div>

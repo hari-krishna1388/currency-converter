@@ -1,0 +1,16 @@
+.widget {
+    border: 1px solid #000;
+   
+    padding: 20px;
+    font-family: 'Arial Narrow', Arial, sans-serif;
+    display: inline-block;
+}
+
+.widget input, select {
+    margin: 10px 10px 10px 0px;
+    padding: 7px;
+}
+
+.txtRight {
+    text-align: right;
+}
